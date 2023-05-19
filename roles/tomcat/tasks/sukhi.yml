@@ -1,5 +1,5 @@
 ---
-- name: Download Tomcat8 from tomcat.apache.org
+- name: Download Tomcat10 from tomcat.apache.org
   hosts: dbserver
   vars:
     download_url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz
