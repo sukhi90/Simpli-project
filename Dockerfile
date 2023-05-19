@@ -1,8 +1,9 @@
 FROM tomcat:8.0-alpine
 
-LABEL maintainer="Nidhi Gupta"
+LABEL maintainer="Sukhjeevan Singh"
 
-ADD ./target/LoginWebApp-1.war /usr/local/tomcat/webapps/
+ADD /root/simpli-project/target/LoginWebApp-1.war /usr/local/tomcat/webapps/
+
 
 EXPOSE 8080
 
