@@ -7,7 +7,7 @@
    - name: Download Open JDK
      become: yes
      apt:
-      name: openjdk-8-jre-headless
+      name: openjdk-11-jre-headless
       update_cache: yes
       state: present
   
@@ -47,6 +47,7 @@
      become: yes
      become_user: tomcat
      shell: "mv /opt/tomcat10/apache*/* /opt/tomcat10"
+
    - name: copy war file
      copy: src=/tmp/target/LoginWebApp-1.war dest=/opt/tomcat10/webapps/
    
