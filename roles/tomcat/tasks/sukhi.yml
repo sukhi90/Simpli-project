@@ -1,7 +1,7 @@
 ---
 - name: Download Tomcat10 from tomcat.apache.org
   hosts: dbserver
-  vars:
+  vars
      download_url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz
   tasks:
    - name: Download Open JDK
@@ -47,7 +47,7 @@
       become: true
 
    - name: copy war file
-     copy: src=/tmp/target/LoginWebApp-1.war dest=/opt/tomcat10/webapps/
+     copy: src=target/springboot2-webapp-jsp-0.0.1-SNAPSHOT.war   dest=/opt/tomcat10/webapps/
 
 
      notify: restart tomcat
