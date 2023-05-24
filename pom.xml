@@ -84,44 +84,8 @@
 
             <scope>provided</scope>
 
-        </dependency>
-
-        <dependency>
-
-            <groupId>javax.servlet.jsp.jstl</groupId>
-
-            <artifactId>jstl-api</artifactId>
-
-            <version>1.2</version>
-
-            <scope>provided</scope>
-
-        </dependency>
-
- 
-
-        <dependency>
-
-            <groupId>org.eclnt</groupId>
-
-            <artifactId>eclntjsfserverRISC</artifactId>
-
-            <version>${cc.version}</version>
-
-        </dependency>
-
-        <dependency>
-
-            <groupId>org.eclnt</groupId>
-
-            <artifactId>eclntjsfserver_jsfimpl</artifactId>
-
-            <version>${cc.version}</version>
-
-        </dependency>
-
- 
-
+          </dependency>
+      
         <dependency>
 
             <!-- PDF creation in grid processing -->
@@ -190,58 +154,9 @@
 
         </dependency>
 
-        <!--
-
-        Optional CaptainCasa packages:
-
-        eclntccee - utilitities + DB access/mapping
-
-        eclntccee_spring - Spring integeration
-
-        eclntpbc - Page Bean Components addon
-
-        -->
-
-        <!--
-
-        <dependency>
-
-            <groupId>org.eclnt</groupId>
-
-            <artifactId>eclntccee</artifactId>
-
-            <version>${cc.version}</version>
-
-        </dependency>
-
-        <dependency>
-
-            <groupId>org.eclnt</groupId>
-
-            <artifactId>eclntccee_spring</artifactId>
-
-            <version>${cc.version}</version>
-
-        </dependency>
-
-        <dependency>
-
-            <groupId>org.eclnt</groupId>
-
-            <artifactId>eclntpbc</artifactId>
-
-            <version>${cc.version}</version>
-
-        </dependency>
-
-        -->
-
-    </dependencies>
-
-    
-
-    <build>
-       <build>
+  </dependencies>
+  <build>
+	  <finalName>mavendemo</finalName>
          <plugins>
            <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -251,16 +166,11 @@
                 <target>1.8</target>
               </configuration>
           </plugin>
-        </plugins>
           <plugin>
              <groupId>org.apache.maven.plugins</groupId>
              <artifactId>maven-resources-plugin</artifactId>
              <version>3.1.0</version>
-        </plugin> 
-      <finalName>mavendemo</finalName>
-
-        <plugins>
-
+        </plugin>
             <plugin>
 
                 <groupId>org.apache.maven.plugins</groupId>
