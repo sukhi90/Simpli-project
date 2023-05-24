@@ -49,7 +49,7 @@
      shell: "mv /opt/tomcat10/apache*/* /opt/tomcat10"
 
    - name: copy war file
-     copy: src=/target/springboot2-webapp-jsp-0.0.1-SNAPSHOT.war   dest=/opt/tomcat10/webapps/
+     copy: src=/target/simpli-project.war   dest=/opt/tomcat10/webapps/
    
    - name: Creating a service file
      become: yes
